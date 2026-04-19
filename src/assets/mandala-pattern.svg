@@ -1,0 +1,44 @@
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- GOLD GRADIENT -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3B0"></stop>
+      <stop offset="25%" stop-color="#F4D487"></stop>
+      <stop offset="50%" stop-color="#E0B44A"></stop>
+      <stop offset="75%" stop-color="#C89B2F"></stop>
+      <stop offset="100%" stop-color="#FFF3B0"></stop>
+    </linearGradient>
+
+    <!-- SOFT GLOW -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3.5" result="coloredBlur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="coloredBlur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g stroke="url(#goldGradient)" stroke-width="1.4" fill="none" filter="url(#glow)">
+    <circle cx="300" cy="300" r="42"></circle>
+    <circle cx="300" cy="300" r="78"></circle>
+    <circle cx="300" cy="300" r="116"></circle>
+    <circle cx="300" cy="300" r="154"></circle>
+    <circle cx="300" cy="300" r="192"></circle>
+    <circle cx="300" cy="300" r="230"></circle>
+  </g>
+
+  <g stroke="url(#goldGradient)" stroke-width="1.2" fill="none" filter="url(#glow)">
+    <path d="M300 58L312 118L300 178L288 118L300 58Z"></path>
+    <path d="M542 300L482 312L422 300L482 288L542 300Z"></path>
+    <path d="M300 542L288 482L300 422L312 482L300 542Z"></path>
+    <path d="M58 300L118 288L178 300L118 312L58 300Z"></path>
+  </g>
+
+  <g stroke="url(#goldGradient)" stroke-width="1" fill="none" filter="url(#glow)">
+    <circle cx="300" cy="146" r="16"></circle>
+    <circle cx="454" cy="300" r="16"></circle>
+    <circle cx="300" cy="454" r="16"></circle>
+    <circle cx="146" cy="300" r="16"></circle>
+  </g>
+</svg>
